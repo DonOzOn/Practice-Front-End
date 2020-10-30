@@ -59,11 +59,11 @@ h2{
 }
 
 .remember {
-  text-align: center;
+  text-align: left;
   margin: 25px 0;
 }
 
-form button {
+button {
   display: block;
   padding: 20px;
   color: white;
