@@ -1,0 +1,145 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+h2{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.signup {
+  width: 700px;
+  background-color: #f5f5f5;
+  display: flex;
+  margin: 25px auto 0;
+  position: relative;
+}
+
+.signup > div {
+  width: 50%;
+}
+
+.left {
+  padding: 45px;
+  background-color: #fff;
+}
+.form-inner {
+  border: 1px solid #eee;
+}
+
+.form-group {
+  padding: 15px;
+}
+
+.form-group:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+
+.form-group label {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.form-group input {
+  display: block;
+  border: 0;
+  outline: none;
+  font-style: 16px;
+  color: #333333;
+}
+
+.form-group input::-webkit-input-placeholder {
+  color: #cccccc;
+}
+
+.remember {
+  text-align: center;
+  margin: 25px 0;
+}
+
+form button {
+  display: block;
+  padding: 20px;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  font-style: 16px;
+  outline: none;
+  border: 0;
+  text-align: center;
+  border-radius: 2px;
+  background-color: #f87253;
+  cursor: pointer;
+}
+
+.right {
+  padding: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right li a {
+  display: flex;
+  align-items: center;
+  color: white;
+  border-radius: 2px;
+  width: 100%;
+  padding: 15px 25px;
+}
+
+.right li a i {
+  font-style: 25px;
+  margin-right: 30px;
+}
+.right li a span {
+  font-style: 10px;
+}
+
+.right li:nth-of-type(2) {
+  margin: 25px 0;
+}
+
+.right li.facebook a {
+  background-color: #476ca9;
+}
+.right li.twitter a {
+  background-color: #27b6e7;
+}
+.right li.google a {
+  background-color: #d7482f;
+}
+
+.or {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: #ddd;
+  color: #999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.member {
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.member a {
+  color: #f87253;
+  text-decoration: underline;
+}
