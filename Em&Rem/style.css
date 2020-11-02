@@ -1,0 +1,28 @@
+html {
+  font-size: 62.5%; /* 10px 100% */
+}
+
+.box1 {
+  width: 10rem;
+  height: 10rem;
+  background-color: red;
+  /**
+   * rem chỉ dựa vào root (html)
+   */
+}
+
+.box2 {
+  font-size: 20px;
+  width: 10em;
+  height: 10em;
+  background-color: blue;
+  /**
+   * dựa vào font size trừ trên  =>  1em = 20px
+   */
+}
+
+/**
+ * 1em = 1rem = 16px 100%
+ * 
+ * 62.5% => 1em =1rem =10px
+ */
