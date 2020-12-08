@@ -1,0 +1,88 @@
+html {
+  font-size: 62.5%; /* 10px 100% */
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 5rem;
+  /* color: red; */
+}
+/* .demo{
+  color: green;
+} */
+
+/**
+ * + gần kề class
+ * ~ gần nhất
+ */
+.title + .demo {
+  color: aquamarine;
+}
+/**
+ * các lớp con 
+ */
+.list > li {
+  color: orange;
+}
+
+/**
+ * first/last-child; phần tử đầu tiên/cuối cùng bên trong
+ */
+.list > li:first-child {
+  color: red;
+  font-size: 3rem;
+}
+
+/**
+ * nth-child(index):  trỏ tới vị trứ thứ index tính từ đầu
+ * nth-last-child(index):  trỏ tới vị trứ thứ index tính từ cuối
+ */
+.list > li:nth-child(2) {
+  color: yellow;
+  font-size: 3rem;
+}
+
+/**
+ * first/last-of-type:  trỏ tới vị trí đầu/cuối của type(ở đây là thẻ li)
+ */
+.list2 li:first-of-type {
+  color: green;
+  font-size: 3rem;
+}
+
+
+/**
+ * nth/nth-last-of-type(index):  trỏ tới vị trí index tính từ đầu/cuối của type(ở đây là thẻ li)
+ */
+.list2 li:nth-of-type(2) {
+  color: red;
+  font-size: 2rem;
+}
+
+/**
+ * not: không phải
+ */
+.list2 li:not(:first-of-type) {
+  color: red;
+  font-size: 4rem;
+}
+
+/**
+ * ^: bắt đầu với
+ * $: kết thúc với
+ * *: có chứ
+ */
+div[style^="cursor: pointer"]{
+  color: blue;
+}
+
+input[type="text"]{
+  background-color: red;
+}
+
+div[data-title]{
+  color: brown;
+}
