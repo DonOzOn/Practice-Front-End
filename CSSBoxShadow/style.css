@@ -1,0 +1,32 @@
+html {
+  font-size: 62.5%; /* 10px 100% */
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.box {
+  background-color: black;
+  width: 20rem;
+  height: 20rem;
+  margin: 5rem auto;
+  /**
+   * box shadow: x y blur scale color;
+   * 
+   */
+  box-shadow: 10px 10px 0 0 red, 20px 20px 0 0 green;
+}
+
+.shield {
+  margin: 20rem auto;
+  font-size: 100px;
+  text-align: center;
+  background-color: #00aefd;
+  width: 150px;
+  height: 150px;
+  padding-top: 18px;
+  border-radius: 50%;
+  /**nested box shadow */
+  box-shadow: 0 0 0 30px #f77870, 0 0 0 60px white, 0 0 0 90px #f77870;
+}

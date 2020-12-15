@@ -1,0 +1,43 @@
+html {
+  font-size: 62.5%; /* 10px 100% */
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.text {
+  max-width: 50rem;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  line-height: 5rem;
+  /*
+  white-space: nowrap; /**không xuonsg dòng */
+  /** dấu 3 chấm khi text quá dài */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /*****************************/
+  /**3 dòng có dấu 3 chấm */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.text2 {
+  max-width: 50rem;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  line-height: 5rem;
+  font-size: 2rem;
+  /* word-break: break-all; */
+}
+.text3 {
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  line-height: 5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.text3 img {
+  display: inline;
+}
