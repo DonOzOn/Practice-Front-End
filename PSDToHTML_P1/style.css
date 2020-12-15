@@ -1,0 +1,91 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  /*đảm bảo size box chuẩn */
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #1a2b5f;
+}
+
+/*image không bị tràn khỏi lớp bọc*/
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+a:hover::before, a:hover::after {
+  text-decoration: none;
+}
+a:hover::before, a:hover::after {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1210px;
+  /*mobile ko bị sát lề*/
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.header {
+  padding-top: 4rem;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.header__menu-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.header__menu-item {
+  margin-left: 5rem;
+}
+.header__menu-item:last-child {
+  margin-left: 7rem;
+}
+.header__menu-link {
+  font-size: 1.6rem;
+  color: #1a2b5f;
+  transition: color 0.25s linear, border 0.25s linear;
+}
+.header__menu-link:hover {
+  color: #ffc87a;
+}
+.header__menu-login {
+  display: inline-block;
+  padding: 1.5rem 2.5rem;
+  border: 1px solid;
+  border-radius: 2.5rem;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #1a2b5f;
+}
+.logo__text {
+  color: #ffc87a;
+}
+
+/*# sourceMappingURL=style.css.map */
